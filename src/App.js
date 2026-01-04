@@ -14,12 +14,14 @@ function App() {
     AOS.init({ duration: 800, once: true });
   }, []);
   return (
-    <div className="App scroll-smooth overflow-x-hidden">
-      <Navbar></Navbar>
-      <Hero></Hero>
-      <About></About>
-      <Skills></Skills>
-      <Projects></Projects>
+    <div className="App overflow-x-hidden">
+      <div className="scroll-smooth">
+        <Navbar></Navbar>
+        <Hero></Hero>
+        <About></About>
+        <Skills></Skills>
+        <Projects></Projects>
+      </div>
       <Footer></Footer>
     </div>
   );
