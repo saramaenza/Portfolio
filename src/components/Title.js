@@ -11,7 +11,7 @@ function Title ({ title, children}) {
         textColor = 'text-neutral-700';
     }
   return (
-    <h1 className={`tracking-wide font-bowlby text-5xl ${textColor}`}>
+    <h1 className={`tracking-wide font-bowlby text-3xl sm:text-4xl md:text-5xl ${textColor}`}>
       {content}
     </h1>
   );

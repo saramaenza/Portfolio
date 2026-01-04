@@ -4,6 +4,7 @@ import NavbarLink from './NavbarLink';
 function Navbar() {
   const [show, setShow] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(window.scrollY)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +23,7 @@ function Navbar() {
 
   function scrollToSection(e, id) {
     e.preventDefault();
+    setMenuOpen(false);
     const section = document.getElementById(id)
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' })
@@ -34,7 +36,31 @@ function Navbar() {
         show ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
+      {/* Hamburger menu for mobile */}
+      <div className="flex md:hidden w-full justify-end pr-6">
+        <button
+          className="p-2 rounded focus:outline-none"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle navigation"
+        >
+          <span class="material-symbols-rounded">menu</span>
+        </button>
+      </div>
+      {/* Links for desktop */}
       <div className="hidden md:flex items-center gap-10 mx-auto">
+        <NavbarLink href="#about" sectionId="about" onClick={scrollToSection}>About Me</NavbarLink>
+        <NavbarLink href="#skills" sectionId="skills" onClick={scrollToSection}>Skills</NavbarLink>
+        <NavbarLink href="#projects" sectionId="projects" onClick={scrollToSection}>My Projects</NavbarLink>
+      </div>
+      {/* Mobile menu */}
+      <div
+        className={`absolute top-full left-0 w-full gap-3 bg-white shadow-md flex flex-col items-center py-4 md:hidden transition-all duration-500 ease-in-out ${
+          menuOpen
+            ? 'opacity-100 scale-y-100 pointer-events-auto'
+            : 'opacity-0 scale-y-0 pointer-events-none'
+        } origin-top`}
+        style={{ willChange: 'transform, opacity' }}
+      >
         <NavbarLink href="#about" sectionId="about" onClick={scrollToSection}>About Me</NavbarLink>
         <NavbarLink href="#skills" sectionId="skills" onClick={scrollToSection}>Skills</NavbarLink>
         <NavbarLink href="#projects" sectionId="projects" onClick={scrollToSection}>My Projects</NavbarLink>

@@ -4,18 +4,18 @@ import Button from './Button';
 
 const HeroTitle = () => (
   <>
-    <h3 className="tracking-wide font-bowlby text-4xl text-neutral-700 pb-5">
+    <h3 className="tracking-wide font-bowlby text-2xl sm:text-3xl md:text-4xl text-neutral-700 pb-3 sm:pb-5">
       Hello!
     </h3>
     <Title>
       I&apos;m <span className="text-carnation">Sara Maenza</span>, <br />
-      a <span className="text-carnation">Front-End Developer</span>.
+      <span className="text-carnation">Front-End Developer</span>.
     </Title>
   </>
 );
 
 const HeroDescription = () => (
-  <Paragraph>
+  <Paragraph className="max-w-xs sm:max-w-md md:max-w-lg mx-auto text-base sm:text-lg md:text-xl px-4 sm:px-10 md:px-20">
     I'm passionate about building projects that solve real problems and constantly improving my skills. I enjoy experimenting with new technologies and turning ideas into functional applications. Scroll down to discover more about my work and skills.
   </Paragraph>
 );
@@ -32,7 +32,7 @@ const SocialButton = ({ href, ariaLabel, children }) => (
 );
 
 const HeroButtons = () => (
-  <div className="w-screen h-auto py-6 flex items-center justify-center gap-5 flex-wrap">
+  <div className="w-full h-auto py-4 sm:py-6 flex items-center justify-center gap-3 sm:gap-5 flex-wrap">
     <SocialButton href="https://www.linkedin.com/in/sara-maenza" ariaLabel="LinkedIn profile">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -72,12 +72,12 @@ function Hero() {
     <header
       data-aos="fade-up"
       id="hero"
-      className="relative mt-5 isolate overflow-hidden w-full h-screen flex items-center justify-center"
+      className="relative mt-5 isolate overflow-hidden w-full min-h-[70vh] sm:min-h-[80vh] md:min-h-screen flex items-center justify-center"
       role="banner"
       aria-label="Hero section"
     >
-      <div className="relative pt-50 sm:pb-32 w-full flex flex-col items-center justify-center">
-        <div className="text-center">
+      <div className="relative pt-20 sm:pt-15 w-full flex flex-col items-center justify-center">
+        <div className="text-center px-5 md:px-20">
           <HeroTitle />
           <HeroDescription />
         </div>

@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 function ProjectTechnologies({ technologies }) {
   return (
-    <div className="flex flex-wrap gap-2 justify-end mt-2">
+    <div className="flex flex-wrap gap-2 justify-start md:justify-end mt-2">
       {technologies.map((tech) => (
         <span key={tech} className="px-3 py-1 rounded bg-neutral-100 text-neutral-700 text-xs">{tech}</span>
       ))}
@@ -16,7 +16,7 @@ function ProjectTechnologies({ technologies }) {
 
 function ProjectActions({ github, demo }) {
   return (
-    <div className="flex items-center justify-end gap-3 flex-wrap mt-4">
+    <div className="flex items-center justify-start md:justify-end gap-3 flex-wrap mt-4">
       <Button
         href={github}
         download={false}
@@ -53,7 +53,7 @@ function ProjectCard({ project, idx }) {
         idx % 2 === 1 ? 'md:flex-row-reverse' : ''
       }`}
     >
-      <div className="flex flex-col items-center w-5/9 h-full justify-center border border-neutral-300 rounded-lg overflow-hidden shadow-lg">
+      <div className="flex flex-col items-center w-full md:w-5/9 h-full justify-center border border-neutral-300 rounded-lg overflow-hidden shadow-lg">
         <video
           className="rounded-lg w-full"
           src={project.video ? "/video/" + project.video : undefined}
@@ -65,8 +65,8 @@ function ProjectCard({ project, idx }) {
           Il tuo browser non supporta il video.
         </video>
       </div>
-      <div className="flex-1 text-right font-quicksand w-4/9 ">
-        <h3 className="text-2xl font-bold mb-2 text-neutral-700 mt-5">{project.name}</h3>
+      <div className="flex-1 text-left md:text-right font-quicksand w-full md:w-4/9 mt-5 md:mt-0">
+        <h3 className="text-2xl font-bold mb-2 text-neutral-700 mt-0 md:mt-5">{project.name}</h3>
         <p
           className="mb-4 font-medium text-neutral-600 text-md mt-5"
           dangerouslySetInnerHTML={{ __html: project.description }}
@@ -77,7 +77,6 @@ function ProjectCard({ project, idx }) {
     </div>
   );
 }
-
 function Projects() {
   return (
     <section
@@ -88,13 +87,15 @@ function Projects() {
         <div className="w-full flex justify-center" data-aos="fade-left" data-aos-delay="300">
           <Title title="My Projects" />
         </div>
-        <div className="relative w-full px-20 mt-10">
+        <div className="relative w-full px-4 sm:px-8 md:px-20 mt-10">
           {data_projects.map((project, idx) => (
             <>
-              <ProjectCard project={project} idx={idx} />
-              <hr data-aos="fade-up" className="w-48 h-1 my-20 mx-auto bg-carnation border-0 rounded-sm" />
+                <ProjectCard project={project} idx={idx} />
+                {idx !== data_projects.length - 1 && (
+                <hr data-aos="fade-up" className="w-32 sm:w-48 h-1 my-20 mx-auto bg-carnation border-0 rounded-sm" />
+                )}
             </>
-          ))}
+            ))}
         </div>
       </div>
     </section>

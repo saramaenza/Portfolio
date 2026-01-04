@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 
 function ContactCard({ photo, city, email, phone }) {
     return (
-        <div className="mx-auto mb-3 md:mt-0 max-w-xs rounded-xl text-neutral-700 shadow-lg text-lg font-quicksand bg-white border border-neutral-600 p-6 flex flex-col items-center gap-3">
-            <img src={photo} alt="Sara Maenza" className="w-32 h-32 rounded-full object-cover border border-neutral-600 -translate-y-1/2 z-10 shadow-xl bg-white relative"/>
+        <div className="mx-auto mb-3 md:mt-0 max-w-xs rounded-xl text-neutral-700 shadow-lg text-md md:text-lg font-quicksand bg-white border border-neutral-600 p-6 flex flex-col items-center gap-3">
+            <img src={photo} alt="Sara Maenza" className="w-25 h-25 md:w-32 md:h-32 rounded-full object-cover border border-neutral-600 -translate-y-2/3 md:-translate-y-1/2 md:z-10 shadow-xl bg-white relative"/>
             <div className="-mt-14 flex flex-col items-center gap-2">
             <p className="flex items-center justify-center gap-2">
                 <span className="material-symbols-outlined text-carnation">location_on</span>

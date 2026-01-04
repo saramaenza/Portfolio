@@ -24,14 +24,14 @@ function About() {
       data-aos="fade-left"
       data-aos-delay="300"
       id="about"
-      className="mt-10 h-screen pt-15 px-25 relative isolate overflow-hidden w-full flex flex-col"
+      className="mt-10 min-h-screen pt-10 px-4 md:px-12 lg:px-24 relative isolate overflow-hidden w-full flex flex-col"
     >
       <div className="w-full">
         <div className="w-full flex justify-center">
           <Title title="About Me" />
         </div>
         <div className="relative flex flex-col md:flex-row items-center md:items-start text-center md:text-left mt-8">
-          <div className="md:basis-1/5 pl-20 w-full flex flex-col items-center pt-10">
+          <div className="md:basis-1/5 md:pl-20 w-full flex flex-col items-center pt-10">
             <ContactCard
               photo={foto_Sara}
               city={contact.city}
@@ -39,10 +39,10 @@ function About() {
               phone={contact.phone}
             />
             <Button {...aButtonCV}>
-              <span className="text-md font-bold font-quicksand tracking-wide">Download my CV</span>
+              <span className="text-sm md:text-md font-bold font-quicksand tracking-wide">Download my CV</span>
             </Button>
           </div>
-          <div className="md:basis-4/5 w-full">
+          <div className="w-full md:w-2/3 px-2 md:px-8">
             <Paragraph>
               I&apos;m a front-end developer passionate about technology and programming, focused on building intuitive, 
               user-centered web experiences. I care deeply about interface design, usability, and human-computer 
@@ -52,11 +52,7 @@ function About() {
               through thoughtful front-end development.
             </Paragraph>
           </div>
-          
         </div>
-      </div>
-      <div className="w-full h-auto py-8 mt-10 flex items-center justify-center gap-5 pb-24 sm:pb-32">
-        
       </div>
     </section>
   )
