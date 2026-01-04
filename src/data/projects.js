@@ -39,15 +39,14 @@ export const data_projects = [
     {
         id: 3,
         name: "Portfolio Website",
-        description: "My personal portfolio website, built to showcase my projects and skills as a front-end developer. It features a clean, responsive design and smooth animations to enhance user experience.",
+        description: "This project is my personal portfolio website, designed and developed to present my projects, skills, and professional profile in a clear and engaging way. Built with React and Tailwind CSS, the site focuses on a clean layout, smooth navigation, and responsive design across devices. It serves as a central hub to showcase selected works, provide access to live demos and source code, and communicate my approach to front-end development with an emphasis on usability, visual consistency, and maintainable component-based architecture.",
         video: "portfolio_demo.mov",
         github: "https://github.com/saramaenza/Portfolio",
         technologies: [
             "React", 
             "JavaScript", 
-            "HTML", 
             "Tailwind CSS"
         ],
-        demo: "https://saramaenza.dev/"
+        demo: "https://saramaenza-dev.vercel.app/"
     }
 ]
