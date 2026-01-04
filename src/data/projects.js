@@ -40,7 +40,7 @@ export const data_projects = [
         id: 3,
         name: "Portfolio Website",
         description: "My personal portfolio website, built to showcase my projects and skills as a front-end developer. It features a clean, responsive design and smooth animations to enhance user experience.",
-        video: "portfolio_demo.mp4",
+        video: "portfolio_demo.mov",
         github: "https://github.com/saramaenza/Portfolio",
         technologies: [
             "React", 
