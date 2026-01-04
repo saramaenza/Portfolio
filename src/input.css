@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-carnation: #f34b4b;
+    --color-bamboo: #d86f02;
+    --font-corben: 'Corben', cursive;
+    --font-quicksand: 'Quicksand', sans-serif;
+    --font-bowlby: 'Bowlby One', cursive;
+}
