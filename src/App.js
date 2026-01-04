@@ -14,7 +14,7 @@ function App() {
     AOS.init({ duration: 800, once: true });
   }, []);
   return (
-    <div className="App scroll-smooth">
+    <div className="App scroll-smooth overflow-x-hidden">
       <Navbar></Navbar>
       <Hero></Hero>
       <About></About>
