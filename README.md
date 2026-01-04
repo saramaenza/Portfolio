@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# 💻 Personal Portfolio – Sara Maenza
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the repository of my personal portfolio website, created to showcase my projects, skills, and professional profile as a developer.
 
-## Available Scripts
+🔗 Live Demo: https://saramaenza-dev.vercel.app/
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project is my personal online portfolio, built to:
 
-### `npm test`
+- Present my technical skills and background
+- Showcase selected projects I’ve worked on
+- Create a clear and professional online presence
+- Provide an easy way to explore my work and contact me
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The website focuses on simplicity, clarity, and usability.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The project was developed using the following technologies:
 
-### `npm run eject`
+- React (Create React App)
+- JavaScript / JSX
+- HTML5
+- CSS3
+- Vercel for deployment and hosting
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ ## Project Components
+- About: Section for personal introduction or profile description.
+- Button: Reusable button component, customizable via props.
+- Card: Component to display content in a card format.
+- Cards: Wrapper or list for multiple cards, useful for displaying collections.
+- ContactCard: Card dedicated to contact or social information.
+- Footer: Website footer.
+- Hero: Main opening section of the page, with a title and subtitle.
+- Navbar: Main navigation bar of the website.
+- NavbarLink: Single navigation link, used inside the Navbar.
+- Paragraph: Component for managing blocks of text or paragraphs.
+- Projects: Section displaying completed projects, with details and media.
+- Skills: Section dedicated to technical or soft skills.
+- Title: Stylized, reusable section title component.
+  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Installation & Local Development
 
-## Learn More
+To run the project locally:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Clone the repository
+- git clone https://github.com/saramaenza/Portfolio.git
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Navigate to the project folder
+- cd Portfolio
 
-### Code Splitting
+#### Install dependencies
+- npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Start the development server
+- npm start
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The application will be available at http://localhost:3000.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Deployment
 
-### Advanced Configuration
+The portfolio is deployed using Vercel with automatic builds and deployments on every push to the main branch.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Contributions, suggestions, and improvements are welcome!
 
-### `npm run build` fails to minify
+1- Fork the repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2- Create a new branch (feature/your-feature-name)
+
+3- Commit your changes
+
+4- Open a Pull Request
+
+
+## Contact
+
+If you’d like to get in touch with me:
+
+💼 LinkedIn: www.linkedin.com/in/sara-maenza
+
+📧 Email: sara.maenza98@gmail.com
+
+
+
+Thank you for visiting my portfolio repository!
+I’m always open to feedback, collaboration, and new opportunities 😊
