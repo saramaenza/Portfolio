@@ -13,7 +13,7 @@ function Skills() {
     >
       <div className="relative pb-16 sm:pb-24 md:pb-32 2xl:pb-0 text-center w-full max-w-7xl mx-auto px-4">
           <Title title="Skills"></Title>
-          <div className="mt-4">
+          <div className="mt-4 2xl:my-10">
             <Paragraph>
               Things I'm familiar with:
             </Paragraph>

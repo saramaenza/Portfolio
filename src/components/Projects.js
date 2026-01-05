@@ -95,7 +95,7 @@ function Projects() {
         <div className="w-full flex justify-center" data-aos="fade-left" data-aos-delay="300">
           <Title title="My Projects" />
         </div>
-        <div className="relative w-full px-4 sm:px-8 md:px-20 mt-10">
+        <div className="relative w-full px-4 sm:px-8 md:px-20 mt-10 2xl:mt-20">
           {data_projects.map((project, idx) => (
             <>
                 <ProjectCard project={project} idx={idx} />

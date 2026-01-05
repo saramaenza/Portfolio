@@ -27,7 +27,7 @@ function About() {
       id="about"
       className="2xl:mt-0 min-h-[60vh] sm:min-h-[70vh] md:min-h-screen pt-10 sm:pt-16 2xl:pt-0 relative isolate overflow-hidden w-full flex items-center justify-center"
     >
-      <div className="w-full px-5 xl:px-20">
+      <div className="w-full px-5 xl:px-20 xs:bg-green-300">
         <div className="w-full flex justify-center">
           <Title title="About Me" />
         </div>
@@ -43,7 +43,7 @@ function About() {
               <span className="text-sm md:text-md 2xl:text-lg font-bold font-quicksand tracking-wide">Download my CV</span>
             </Button>
           </div>
-          <div className="w-full md:w-2/3 2xl:pl-2 md:pl-8">
+          <div className="w-full md:w-2/3 2xl:pl-2 md:pl-8 pt-5 sm:pt-5 md:pt-0">
             <Paragraph>
               I&apos;m a front-end developer passionate about technology and programming, focused on building intuitive, 
               user-centered web experiences. I care deeply about interface design, usability, and human-computer 
