@@ -9,7 +9,7 @@ const HeroTitle = () => (
     </h3>
     <Title>
       I&apos;m <span className="text-carnation">Sara Maenza</span>, <br />
-      <span className="text-carnation">Front-End Developer</span>.
+      a <span className="text-carnation">Front-End Developer</span>.
     </Title>
   </>
 );
