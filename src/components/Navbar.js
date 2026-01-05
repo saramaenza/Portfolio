@@ -32,7 +32,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`bg-white pb-5 pt-5 font-quicksand w-full font-medium fixed top-0 left-0 z-50 flex items-center text-center mx-auto text-md text-gray-950 transition-transform duration-300 ${
+      className={`bg-white pb-5 pt-5 font-quicksand w-full font-medium fixed top-0 left-0 z-50 flex items-center text-center mx-auto text-md 2xl:text-lg text-gray-950 transition-transform duration-300 ${
         show ? 'translate-y-0' : '-translate-y-full'
       }`}
     >

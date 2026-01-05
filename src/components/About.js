@@ -25,14 +25,14 @@ function About() {
       data-aos="fade-left"
       data-aos-delay="300"
       id="about"
-      className="mt-10 min-h-screen pt-10 px-4 md:px-12 lg:px-24 relative isolate overflow-hidden w-full flex flex-col"
+      className="2xl:mt-0 min-h-[60vh] sm:min-h-[70vh] md:min-h-screen pt-10 sm:pt-16 2xl:pt-0 relative isolate overflow-hidden w-full flex items-center justify-center"
     >
-      <div className="w-full">
+      <div className="w-full px-5 xl:px-20">
         <div className="w-full flex justify-center">
           <Title title="About Me" />
         </div>
-        <div className="relative flex flex-col md:flex-row items-center md:items-start text-center md:text-left mt-8">
-          <div className="md:basis-1/5 md:pl-20 w-full flex flex-col items-center pt-10">
+        <div className="relative flex flex-col md:flex-row items-center justify-center text-center md:text-left mt-8 lg:gap-10">
+          <div className="md:basis-1/5 w-full flex flex-col items-center pt-10">
             <ContactCard
               photo={foto_Sara}
               city={contact.city}
@@ -40,10 +40,10 @@ function About() {
               phone={contact.phone}
             />
             <Button {...aButtonCV}>
-              <span className="text-sm md:text-md font-bold font-quicksand tracking-wide">Download my CV</span>
+              <span className="text-sm md:text-md 2xl:text-lg font-bold font-quicksand tracking-wide">Download my CV</span>
             </Button>
           </div>
-          <div className="w-full md:w-2/3 px-2 md:px-8">
+          <div className="w-full md:w-2/3 2xl:pl-2 md:pl-8">
             <Paragraph>
               I&apos;m a front-end developer passionate about technology and programming, focused on building intuitive, 
               user-centered web experiences. I care deeply about interface design, usability, and human-computer 

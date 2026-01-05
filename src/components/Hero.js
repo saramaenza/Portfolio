@@ -4,7 +4,7 @@ import Button from './Button';
 
 const HeroTitle = () => (
   <>
-    <h3 className="tracking-wide font-bowlby text-2xl sm:text-3xl md:text-4xl text-neutral-700 pb-3 sm:pb-5">
+    <h3 className="tracking-wide font-bowlby text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl text-neutral-700 pb-3 sm:pb-5">
       Hello!
     </h3>
     <Title>
@@ -37,11 +37,10 @@ const HeroButtons = () => (
     <SocialButton href="https://www.linkedin.com/in/sara-maenza" ariaLabel="LinkedIn profile">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="25"
-        height="25"
         viewBox="0 0 72 72"
         aria-label="LinkedIn icon"
         role="img"
+        className="w-7 h-7 2xl:w-10 2xl:h-10" 
       >
         <path
           d="M24.7612 55.999V28.3354H15.5433V55.999H24.7621H24.7612ZM20.1542 24.5591C23.3679 24.5591 25.3687 22.4348 25.3687 19.7801C25.3086 17.065 23.3679 15 20.2153 15C17.0605 15 15 17.065 15 19.7799C15 22.4346 17.0001 24.5588 20.0938 24.5588H20.1534L20.1542 24.5591ZM29.8633 55.999H39.0805V40.5521C39.0805 39.7264 39.1406 38.8985 39.3841 38.3088C40.0502 36.6562 41.5668 34.9455 44.1138 34.9455C47.4484 34.9455 48.7831 37.4821 48.7831 41.2014V55.999H58V40.1376C58 31.6408 53.4532 27.6869 47.3887 27.6869C42.4167 27.6869 40.233 30.4589 39.0198 32.347H39.0812V28.3364H29.8638C29.9841 30.9316 29.8631 56 29.8631 56L29.8633 55.999Z"
@@ -52,8 +51,7 @@ const HeroButtons = () => (
     <SocialButton href="https://github.com/saramaenza" ariaLabel="GitHub profile">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="25"
-        height="25"
+        className="w-7 h-7 2xl:w-10 2xl:h-10" 
         viewBox="0 0 24 24"
         fill="currentColor"
         aria-label="GitHub icon"
@@ -80,7 +78,9 @@ function Hero() {
       <div className="relative pt-20 sm:pt-15 w-full flex flex-col items-center justify-center">
         <div className="text-center px-5 md:px-20">
           <HeroTitle />
-          <HeroDescription />
+          <div className="mt-4">
+            <HeroDescription />
+          </div>
         </div>
         <HeroButtons />
       </div>
