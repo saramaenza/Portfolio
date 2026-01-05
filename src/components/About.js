@@ -47,7 +47,7 @@ function About() {
               I&apos;m a front-end developer passionate about technology and programming, focused on building intuitive, 
               user-centered web experiences. I care deeply about interface design, usability, and human-computer 
               interaction, and I enjoy transforming ideas into clean, accessible, and responsive interfaces. 
-              I combine solid technical skills with attention to detail, reliability, and a results-oriented mindset. 
+              My work combines solid technical skills with attention to detail, reliability, and a results-oriented mindset. 
               I&apos;m always eager to learn, experiment, and grow in dynamic environments where I can contribute real value 
               through thoughtful front-end development.
             </Paragraph>
