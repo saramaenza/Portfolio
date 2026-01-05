@@ -23,6 +23,7 @@ const HeroDescription = () => (
 const SocialButton = ({ href, ariaLabel, children }) => (
   <Button
     href={href}
+    title={ariaLabel}
     download={false}
     className="group p-2 rounded-lg flex items-center border border-neutral-600 justify-center transition-colors duration-300 hover:bg-carnation"
     aria-label={ariaLabel}

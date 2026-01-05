@@ -20,6 +20,7 @@ function ProjectActions({ github, demo }) {
       <Button
         href={github}
         download={false}
+        title="GitHub Repository"
         className="group p-1.5 rounded-lg flex items-center border border-neutral-600 justify-center transition-colors duration-300 hover:bg-carnation"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -32,6 +33,7 @@ function ProjectActions({ github, demo }) {
       <Button
         href={demo}
         download={false}
+        title="Live Demo"
         className="group p-1.5 rounded-lg flex items-center border border-neutral-600 justify-center transition-colors duration-300 hover:bg-carnation"
       >
         <span className="material-symbols-rounded transition-colors duration-300 group-hover:text-white" style={{ fontSize: '20px' }}>

@@ -15,6 +15,7 @@ function About() {
 
   const aButtonCV = {
       href: cvPdf,
+      title: 'Download my CV',
       download: true,
       className: "p-2 rounded-lg flex items-center border border-neutral-600 justify-center transition-all duration-500 text-neutral-700 hover:bg-carnation hover:text-white",
   }
