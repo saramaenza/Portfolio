@@ -12,7 +12,8 @@ export const data_projects = [
             "Python", 
             "REST APIs", 
             "Fetch APIs", 
-            "Bootstrap"
+            "Bootstrap",
+            "MongoDB"
         ],
         demo: "https://rulebot.isti.cnr.it/casper/"
     },
