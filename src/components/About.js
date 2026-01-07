@@ -3,7 +3,9 @@ import Paragraph from './Paragraph'
 import Button from './Button';
 import ContactCard from './ContactCard';
 import foto_Sara from '../fotoCV.jpg';
-import cvPdf from '../Sara-Maenza-CV.pdf';
+import cvPdfIT from '../Sara-Maenza-CV.pdf';
+import cvPdfEN from '../Sara-Maenza-CV-EN.pdf';
+
 
 function About() {
 
@@ -13,12 +15,19 @@ function About() {
     phone: '+39 340 2113342',
   };
 
-  const aButtonCV = {
-      href: cvPdf,
-      title: 'Download my CV',
+  const aButtonCV_IT = {
+      href: cvPdfIT,
+      title: 'Download my CV (IT)',
       download: true,
       className: "p-2 rounded-lg flex items-center border border-neutral-600 justify-center transition-all duration-500 text-neutral-700 hover:bg-carnation hover:text-white",
   }
+
+  const aButtonCV_EN = {
+    href: cvPdfEN,
+    title: 'Download my CV (EN)',
+    download: true,
+    className: "p-2 rounded-lg flex items-center border border-neutral-600 justify-center transition-all duration-500 text-neutral-700 hover:bg-carnation hover:text-white",
+}
     
   return (
     <section
@@ -39,9 +48,14 @@ function About() {
               email={contact.email}
               phone={contact.phone}
             />
-            <Button {...aButtonCV}>
-              <span className="text-sm md:text-md 2xl:text-lg font-bold font-quicksand tracking-wide">Download my CV</span>
-            </Button>
+            <div className="flex gap-4 mt-4">
+              <Button {...aButtonCV_IT}>
+                <span className="text-sm md:text-md 2xl:text-lg font-bold font-quicksand tracking-wide">CV Italiano</span>
+              </Button>
+              <Button {...aButtonCV_EN}>
+                <span className="text-sm md:text-md 2xl:text-lg font-bold font-quicksand tracking-wide">CV English</span>
+              </Button>
+            </div>
           </div>
           <div className="w-full md:w-2/3 2xl:pl-2 md:pl-8 pt-5 sm:pt-5 md:pt-0">
             <Paragraph>
