@@ -43,7 +43,7 @@ function Navbar() {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle navigation"
         >
-          <span class="material-symbols-rounded">menu</span>
+          <span className="material-symbols-rounded">menu</span>
         </button>
       </div>
       {/* Links for desktop */}
