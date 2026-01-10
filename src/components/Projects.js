@@ -90,7 +90,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="2xl:mt-0 pt-20 sm:pt-16 xl:pt-35 2xl:pt-60 relative isolate overflow-hidden w-full flex items-center justify-center"    >
+      className="pt-15 mt-20 sm:mt-16 xl:mt-35 2xl:mt-60 relative isolate overflow-hidden w-full flex items-center justify-center"    >
       <div className="w-full">
         <div className="w-full flex justify-center" data-aos="fade-left" data-aos-delay="300">
           <Title title="My Projects" />
